@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>ZapppSearch</title>
+</head>
+<body>
+<form action="#" th:action="@{/search}" method="get">
+    <label>
+        Search :
+        <input type="text" name="query" placeholder="Search..." />
+    </label>
+    <button type="submit">Search</button>
+</form>
+<form action="#" th:action="@{/index}" method="post">
+    <label>
+        Enter a url to index
+        <input type="text" name="url" placeholder="Enter URL to Index" />
+    </label>
+    <button type="submit">Index</button>
+</form>
+</body>
+</html>
